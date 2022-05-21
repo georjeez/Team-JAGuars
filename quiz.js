@@ -93,7 +93,7 @@ const questions = [
 },
 
 {
-    question: 'According to the ICUN list, jaguars Near Threatened.',
+    question: 'According to the ICUN list, jaguars are Near Threatened.',
     answers: [
         {text: 'False', correct: false },
         {text: 'True', correct: true}
@@ -103,8 +103,8 @@ const questions = [
 {
     question: 'What is the scientific name for jaguars?',
     answers: [
-        {text: 'Jaguar Jaguar', correct: false },
-        {text: 'Panthera Onca', correct: true}
+        {text: 'Jaguar jaguar', correct: false },
+        {text: 'Panthera onca', correct: true}
     ]
 },
 
