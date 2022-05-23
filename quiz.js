@@ -85,44 +85,55 @@ function setStatusClass(element, correct){
 
 const questions = [
     {
-    question: 'Are jaguars herbivores or carnivores?',
+    question: 'What diet do jaguars follow?',
     answers: [
-        {text: 'Carnivores', correct: true },
-        {text: 'Herbivores', correct: false }
+        {text: 'Omnivorous', correct: false },
+        {text: 'Herbivorous', correct: false },
+        {text: 'Frugivorous', correct: false },
+        {text: 'Carnivorous', correct: true },
     ]
 },
 
 {
-    question: 'According to the ICUN list, jaguars are Near Threatened.',
+    question: 'According to the ICUN Red List, jaguars are catergorised as which threat classification?',
     answers: [
-        {text: 'False', correct: false },
-        {text: 'True', correct: true}
+        {text: 'Least Concern', correct: false },
+        {text: 'Near Threatened', correct: true},
+        {text: 'Vulnerable', correct: false },
+        {text: 'Critically Endangered', correct: false },
     ]
 },
 
 {
     question: 'What is the scientific name for jaguars?',
     answers: [
+        {text: 'Panthera onca', correct: true},
+        {text: 'Panthera pardus', correct: false },
         {text: 'Jaguar jaguar', correct: false },
-        {text: 'Panthera onca', correct: true}
+        {text: 'Panthera uncia', correct: false },
     ]
 },
 
 {
     question: 'Jaguars are the only big cat in the Americas?',
     answers: [
-        {text: 'False', correct: false },
-        {text: 'True', correct: true}
+        {text: 'True', correct: false},
+        {text: 'False', correct: true}
     ]
 },
 
 {
     question: 'What is the average life span of a jaguar in the wild?',
     answers: [
-        {text: '16 to 19 years', correct: false },
-        {text: '12 to 15 years', correct: true}
+        {text: '18 to 21 years', correct: false },
+        {text: '15 to 18 years', correct: false },
+        {text: '12 to 15 years', correct: true},
+        {text: '9 to 12 years', correct: false }
     ]
 }
 ]
 
 // jaguar facts - https://www.nationalgeographic.com/animals/mammals/facts/jaguar
+//                https://www.iucnredlist.org/species/15953/123791436
+//                https://www.iucn.org/news/commission-environmental-economic-and-social-policy/202110/black-jaguar-and-guardian-forest
+// big cat facts - https://en.wikipedia.org/wiki/Big_cat
