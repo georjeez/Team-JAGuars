@@ -17,11 +17,11 @@ nextbtn.addEventListener('click', ()=> {
 })
 
 function startquiz(){
-console.log('Quiz Started')
-startbtn.classList.add('hide')
-shuffleQ = questions.sort(() => Math.random() - 0.5)
-currentQindex = 0
-questionContainerElement.classList.remove('hide')
+    console.log('Quiz Started')
+    startbtn.classList.add('hide')
+    shuffleQ = questions.sort(() => Math.random() - 0.5)
+    currentQindex = 0
+    questionContainerElement.classList.remove('hide')
 nextQ()
 }
 
@@ -31,8 +31,8 @@ function nextQ(){
 }
 
 function showQ (question) {
-questionElement.innerText = question.question
-question.answers.forEach(answer => {
+    questionElement.innerText = question.question
+    question.answers.forEach(answer => {
     const button = document.createElement('button')
     button.innerText= answer.text
     button.classList.add('btn')
@@ -133,7 +133,10 @@ const questions = [
 }
 ]
 
-// jaguar facts - https://www.nationalgeographic.com/animals/mammals/facts/jaguar
+// jaguar facts-  https://www.nationalgeographic.com/animals/mammals/facts/jaguar
 //                https://www.iucnredlist.org/species/15953/123791436
 //                https://www.iucn.org/news/commission-environmental-economic-and-social-policy/202110/black-jaguar-and-guardian-forest
-// big cat facts - https://en.wikipedia.org/wiki/Big_cat
+// big cat facts- https://en.wikipedia.org/wiki/Big_cat
+
+// embed this map https://www.inaturalist.org/taxa/41970-Panthera-onca 
+//
