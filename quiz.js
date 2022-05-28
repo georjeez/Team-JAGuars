@@ -7,6 +7,10 @@ const questionContainerElement = document.getElementById('question-container')
 const questionElement = document.getElementById('question')
 const answerButtonElement = document.getElementById('answer-buttons')
 
+const startname = document.getElementById('qn1')
+const resultbox = document.getElementById('resultBox')
+var correctAns = 0
+
 let shuffleQ
 let currentQindex
 
@@ -19,6 +23,8 @@ nextbtn.addEventListener('click', ()=> {
 function startquiz(){
     console.log('Quiz Started')
     startbtn.classList.add('hide')
+    startname.classList.add('hide')
+    resultbox.classList.add('hide')
     shuffleQ = questions.sort(() => Math.random() - 0.5)
     currentQindex = 0
     questionContainerElement.classList.remove('hide')
@@ -55,6 +61,9 @@ function resetQ(){
 function selectanswer(e){
 const selectedButton = e.target
 const correct = selectedButton.dataset.correct
+if (correct) {
+    correctAns++
+}
 setStatusClass(document.body, correct)
 Array.from(answerButtonElement.children).forEach(button => {
     setStatusClass(button, button.dataset.correct)
@@ -63,7 +72,12 @@ if(shuffleQ.length > currentQindex + 1){
     nextbtn.classList.remove('hide')  
 }
 else{
+    resultbox.classList.remove('hide')
+    resultbox.innerText = "You got " + correctAns.toString() + "/" + shuffleQ.length.toString() + " correct!"
+    correctAns = 0
     startbtn.innerText = 'Restart Quiz'
+    startbtn.style.color = 'white'
+    startbtn.style.fontSize = '21px'
     startbtn.classList.remove('hide')
 }
 }
@@ -132,6 +146,7 @@ const questions = [
     ]
 }
 ]
+
 
 // jaguar facts-  https://www.nationalgeographic.com/animals/mammals/facts/jaguar
 //                https://www.iucnredlist.org/species/15953/123791436
