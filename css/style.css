@@ -85,7 +85,7 @@ header nav a:hover{
   margin: 0;
   display: flex;
   width: 100vw;
-  height: 100vh;
+  height: 55vh;
   justify-content: center;
   align-items: center;
   font-family: "Poppins";
@@ -104,7 +104,6 @@ header nav a:hover{
 }
 
 .resultBox {
-
   text-align: center;
   color: black;
   gap: 5px;
@@ -114,7 +113,6 @@ header nav a:hover{
 }
 
 .qn1 {
-  
   font-weight: bold;
 }
 
@@ -166,6 +164,7 @@ header nav a:hover{
 .hide{
   display:none;
 }
+
 
 /* footer */
 
@@ -227,14 +226,23 @@ footer{
 }
 
 @media (max-width:991px){
-
+  .quiz-body {
+    width: 80vw;
+    height: 55vh;
+  }
 }
 
 @media (max-width:768px){
-
+  .quiz-body {
+    width: 60vw;
+    height: 50vh;
+  }
 }
 
 @media (max-width:450px){
-
+  .quiz-body {
+    width: 40vw;
+    height: 50vh;
+  }
 
 }
