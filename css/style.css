@@ -130,12 +130,12 @@ header nav a:hover{
 
 }
 
-.resultBox {
+.result-box {
   text-align: center;
   color: black;
   gap: 5px;
   padding: 5px 10px;
-  font-size: 18px;
+  font-size: 17px;
   font-weight: bold;
 }
 
