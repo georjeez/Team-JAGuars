@@ -6,30 +6,58 @@
   font-family:'Poppins';
 }
 
+* img{
+  max-width:100%;
+  border-radius:5px;
+}
+
+.main-content{
+background-color:red;
+ display:flex; 
+ max-width: 100%; 
+ padding:10px; 
+border-radius: 5px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.column {
+  flex: 50%;
+  padding:5px;
+}
+
 header{
-  width: 100vw;
+  width: 100%;
   height: 100px;
   border-bottom: solid 1px rgba(16, 16, 16, 0.1);
   background-color: #f3e0d1;
 }
 
 header .inner{
-  width: 1300px; 
+  width: 100%;
+  max-width: 1080px;
   height: 100%;
   display: block;
   margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
 
 header .logo{
-  display: table;
   height: 100%;
-  float: left;
 }
 
 header .logo div{
   height: 100%;
-  display: table-cell;
-  vertical-align: middle;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 header .logo img{
@@ -38,7 +66,6 @@ header .logo img{
 }
 
 header nav{
-  float: right;
   height: 100%;
 }
 
@@ -77,10 +104,7 @@ header nav a:hover{
   display: block;
 }
 
-/* Start of Gallery */
-* {
-  box-sizing: border-box;
-}
+/* Quiz part starts */
 
 /* Position the image container (needed to position the left and right arrows) */
 .gallery-container {
@@ -89,91 +113,93 @@ header nav a:hover{
   display: block;
   margin-left: auto;
   margin-right: auto;
+
+}
+.quiz-body {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  width: 100vw;
+  height: 55vh;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins";
+  
 }
 
-/* Hide the images by default */
-.mySlides {
-  display: none;
-}
-
-/* Add a pointer when hovering over the thumbnail images */
-.cursor {
-  cursor: pointer;
-}
-
-/* Next & previous buttons */
-.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 40%;
-  width: auto;
-  padding: 16px;
-  margin-top: -50px;
-  color: white;
-  font-weight: bold;
-  font-size: 20px;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-  -webkit-user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-  -webkit-transition: 300ms ease-in-out;
-  -moz-transition: 300ms ease-in-out;
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* Container for image text */
-.caption-container {
+.quiz-container {
+  width: 800px;
+  max-width: 80%;
+  background-color:RGB(248, 253, 137);
+  border-radius: 5px;
+  padding: 20px;
   text-align: center;
-  background-color: #222;
-  padding: 2px 16px;
-  color: white;
+  background-color: #f3e0d1;
+
 }
 
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
+.result-box {
+  text-align: center;
+  color: black;
+  gap: 5px;
+  padding: 5px 10px;
+  font-size: 17px;
+  font-weight: bold;
 }
 
-/* Six columns side by side */
-.column {
-  float: left;
-  width: 16.66%;
+.qn1 {
+  font-weight: bold;
 }
 
-/* Add a transparency effect for thumnbail images */
-.demo {
-  opacity: 0.6;
+
+.btn-grid{
+ display: grid;
+ grid-template-columns: repeat(2, auto);
+ justify-content: center;
+ align-items:center;
+ gap: 10px;
+ margin: 10px 2px;
 }
 
-.active,
-.demo:hover {
-  opacity: 1;
-  -webkit-transition: 300ms ease-in-out;
-  -moz-transition: 300ms ease-in-out;
+.btn {
+  background-color: lightblue;
+  border: 2px solid lightseagreen;
+  border-radius: 5px;
+  padding: 5px 10px;
+  color: black;
+  outline: none;
+  margin: 0 2px;
 }
 
-/* End of Gallery */
+.btn:hover{
+  border-color: orange;
+  background-color: #e6c166;
+}
+
+.btn.correct{
+  background-color: greenyellow
+}
+
+.btn.incorrect {
+  background-color:orangered;
+}
+
+.start-btn, .next-btn{
+  font-weight: bold;
+  margin: 0 5px;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items:center;
+
+}
+
+.hide{
+  display:none;
+}
 
 
 /* footer */
@@ -236,14 +262,23 @@ footer{
 }
 
 @media (max-width:991px){
-
+  .quiz-body {
+    width: 80vw;
+    height: 55vh;
+  }
 }
 
 @media (max-width:768px){
-
+  .quiz-body {
+    width: 60vw;
+    height: 50vh;
+  }
 }
 
 @media (max-width:450px){
-
+  .quiz-body {
+    width: 40vw;
+    height: 50vh;
+  }
 
 }
