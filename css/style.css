@@ -106,6 +106,15 @@ header nav a:hover{
 
 /* Quiz part starts */
 
+/* Position the image container (needed to position the left and right arrows) */
+.gallery-container {
+  position: relative;
+  width:900px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
 .quiz-body {
   position: relative;
   padding: 0;
