@@ -8,7 +8,7 @@ const questionElement = document.getElementById('question')
 const answerButtonElement = document.getElementById('answer-buttons')
 
 const startname = document.getElementById('qn1')
-const resultbox = document.getElementById('resultBox')
+const resultbox = document.getElementById('result-box')
 var correctAns = 0
 
 let shuffleQ
@@ -18,7 +18,8 @@ startbtn.addEventListener('click', startquiz)
 nextbtn.addEventListener('click', ()=> {
     currentQindex++
     nextQ()
-})
+    }
+)
 
 function startquiz(){
     console.log('Quiz Started')
