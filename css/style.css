@@ -12,11 +12,12 @@
 }
 
 .main-content{
-background-color:red;
- display:flex; 
- max-width: 100%; 
- padding:10px; 
-border-radius: 5px;
+  background-color:red;
+  display:flex; 
+  max-width: 75%; 
+  padding:10px; 
+  border-radius: 5px;
+  margin:auto;
 }
 
 .row {
