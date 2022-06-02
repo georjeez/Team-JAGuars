@@ -291,7 +291,7 @@ header nav a:hover{
   text-align: justify;
 }
 
-.campus{
+.navbtns{
   width: 80%;
   margin: auto;
   margin-top: 5%;
@@ -299,7 +299,7 @@ header nav a:hover{
   padding-top: 50px; 
 }
 
-.campus-col{
+.navbtns-col{
   flex-basis: 32%;
   border-radius: 10px;
   margin-bottom: 30px;
@@ -307,14 +307,13 @@ header nav a:hover{
   overflow: hidden;
 }
 
-.campus-col img{
+.navbtns-col img{
   width: 100%;
   height: auto;
   display: block;
 }
 
-
-.layer{
+.navlayer{
   background: transparent;
   height: 100%;
   width: 100%;
@@ -324,12 +323,11 @@ header nav a:hover{
   transition: 0.5s;
 }
 
-.layer:hover{
+.navlayer:hover{
   background: #f9d7be4e; 
-
 }
 
-.layer h3{
+.navlayer h3{
   width: 100%;
   font-weight: 500;
   color: #fff;
@@ -342,7 +340,7 @@ header nav a:hover{
   transform: 0.5s;
 }
 
-.layer:hover h3{
+.navlayer:hover h3{
   bottom: 49%;
   opacity: 1;
 }
@@ -398,8 +396,6 @@ footer{
   text-transform: capitalize;
   color:#333;
 }
-
- 
 
 /* media queries  */
 
