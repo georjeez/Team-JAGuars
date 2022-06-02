@@ -12,23 +12,25 @@
 }
 
 .main-content{
-  background-color:red;
-  display:flex; 
-  max-width: 75%; 
-  padding:10px; 
+ display:flex; 
+ max-width: 100%; 
+ padding:10px; 
   border-radius: 5px;
-  margin:auto;
+  color:#333;
 }
 
 .row {
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: justify;
 }
 
 .column {
   flex: 50%;
   padding:5px;
+  margin-left: 50px;
+  margin-right: 30px;
 }
 
 header{
@@ -88,7 +90,7 @@ header nav span {
 }
 
 header nav a{
-  color: #101010;
+  color:#333;
 }
 
 header nav a:hover{
@@ -97,12 +99,36 @@ header nav a:hover{
   color: #95731e;
 }
 
-
-/* Banner image styles */
+/* Banner */
 .banner-image{
-  height: 700px;
   width: 100%;
-  display: block;
+  height: auto;
+}
+
+.title {
+	text-align: center;
+	font-size: 50px;
+	display: block;
+	padding-top: 50px;
+}
+
+.title-text{
+  text-align: center;
+}
+
+.myth-img{
+  text-align: center;
+}
+
+.myth-text{
+  color:#333;
+  margin-left: 100px;
+  margin-right: 100px;
+  text-align: justify;
+}
+
+.jag-video{
+  text-align: center;
 }
 
 /* Quiz part starts */
@@ -126,7 +152,7 @@ header nav a:hover{
   justify-content: center;
   align-items: center;
   font-family: "Poppins";
-  
+  color:#333;
 }
 
 .quiz-container {
@@ -137,7 +163,6 @@ header nav a:hover{
   padding: 20px;
   text-align: center;
   background-color: #f3e0d1;
-
 }
 
 .result-box {
@@ -211,6 +236,12 @@ footer{
   width: 100%;
   padding-top: 40px;
   color: #fff;
+  left: 0;
+  bottom: 0;
+
+
+
+  
 }
 
 .footer-content{
@@ -220,6 +251,7 @@ footer{
   flex-direction: column;
   text-align: center;
   margin-bottom: 20px;
+  
 }
 
 .footer-content h3{
@@ -228,8 +260,7 @@ footer{
   text-transform: capitalize;
   line-height: 3rem;
   font-size: 24px;
-  color: black;
-
+  color:#333;
 }
 
 .footer-content p{
@@ -237,7 +268,7 @@ footer{
   margin: 10px auto;
   line-height: 28px;
   font-size: 16px;
-  color: black;
+  color:#333;
 }
 
 .footer-bottom{
@@ -245,13 +276,14 @@ footer{
   width: 100%;
   padding: 20px 0;
   text-align:  center;
+
 }
 
 .footer-bottom p{
   font-size: 14px;
   word-spacing: 2px;
   text-transform: capitalize;
-  color: black;
+  color:#333;
 }
 
 
