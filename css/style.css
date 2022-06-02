@@ -15,7 +15,9 @@
  display:flex; 
  max-width: 100%; 
  padding:10px; 
-border-radius: 5px;
+  border-radius: 5px;
+  color:#333;
+
 }
 
 .row {
@@ -89,7 +91,7 @@ header nav span {
 }
 
 header nav a{
-  color: #101010;
+  color:#333;
 }
 
 header nav a:hover{
@@ -97,8 +99,6 @@ header nav a:hover{
   -moz-transition:color 300ms ease-in-out;
   color: #95731e;
 }
-
-
 
 /* Banner */
 .banner-image{
@@ -115,10 +115,7 @@ header nav a:hover{
 
 .title-text{
   text-align: center;
-  
 }
-
-
 
 .myth-img{
   text-align: center;
@@ -147,7 +144,7 @@ header nav a:hover{
   justify-content: center;
   align-items: center;
   font-family: "Poppins";
-  
+  color:#333;
 }
 
 .quiz-container {
@@ -158,7 +155,6 @@ header nav a:hover{
   padding: 20px;
   text-align: center;
   background-color: #f3e0d1;
-
 }
 
 .resultBox {
@@ -229,9 +225,15 @@ header nav a:hover{
 footer{
   background: #f3e0d1;
   height: auto;
-  width: 100vw;
+  width: 100%;
   padding-top: 40px;
   color: #fff;
+  left: 0;
+  bottom: 0;
+
+
+
+  
 }
 
 .footer-content{
@@ -241,6 +243,7 @@ footer{
   flex-direction: column;
   text-align: center;
   margin-bottom: 20px;
+  
 }
 
 .footer-content h3{
@@ -249,8 +252,7 @@ footer{
   text-transform: capitalize;
   line-height: 3rem;
   font-size: 24px;
-  color: black;
-
+  color:#333;
 }
 
 .footer-content p{
@@ -258,7 +260,7 @@ footer{
   margin: 10px auto;
   line-height: 28px;
   font-size: 16px;
-  color: black;
+  color:#333;
 }
 
 .footer-bottom{
@@ -266,13 +268,14 @@ footer{
   width: 100vw;
   padding: 20px 0;
   text-align:  center;
+
 }
 
 .footer-bottom p{
   font-size: 14px;
   word-spacing: 2px;
   text-transform: capitalize;
-  color: black;
+  color:#333;
 }
 
 
