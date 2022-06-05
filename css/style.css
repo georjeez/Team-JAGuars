@@ -183,6 +183,7 @@ header nav a:hover{
   padding: 20px;
   text-align: center;
   background-color: #f3e0d1;
+  margin: 5%;
 }
 
 .result-box {
@@ -354,7 +355,7 @@ header nav a:hover{
 }
 
 .useful-links a{
- color: #333;
+ color: black;
 }
 
 .useful-links a:hover{
