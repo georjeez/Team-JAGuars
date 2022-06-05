@@ -297,6 +297,7 @@ header nav a:hover{
   margin-top: 5%;
   text-align: center;
   padding-top: 50px; 
+  margin-top: 8%;
 }
 
 .navbtns-col{
@@ -343,6 +344,21 @@ header nav a:hover{
 .navlayer:hover h3{
   bottom: 49%;
   opacity: 1;
+}
+
+.useful-links{
+  position: relative;
+  text-align: center;
+  margin: 2%;
+  line-height: 150%;
+}
+
+.useful-links a{
+ color: #333;
+}
+
+.useful-links a:hover{
+  color: #e6c166;
 }
 
 /* footer */
