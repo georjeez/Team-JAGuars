@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="quiz.js" defer></script>
+    <script src="hamb.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,25 +15,22 @@
 </head>
 <body>
 <!-- header section starts -->
-<header>
-    <div class="inner">
-        <div class="logo">
-            <div>
-                <a href="index.html"><img src="assets/Jag_Logo.png" alt="Logo"></a>
-            </div>
-        </div>
-
-        <nav>
-            <li><span><a href="index.html">Home</a></span></li>
-            <li><span><a href="appearance.html">Appearance</a></span></li>
-            <li><span><a href="habitatAndBehaviour.html">Habitat & Behaviour</a></span></li>
-            <li><span><a href="mythology.html">Mythology</a></span></li>
-            <li><span><a href="quiz_index.html">Quiz</a></span></li>
-        </nav>
+<div class="nav-bar">
+    <a href="index.html" class="active">JAGuars</a>
+    <!-- Navigation links (hidden by default) -->
+    <div id="myLinks">
+      <a href="index.html">Home</a>
+      <a href="appearance.html">Appearance</a> 
+      <a href="habitatAndBehaviour.html">Habitat & Behaviour</a>
+      <a href="mythology.html">Mythology</a>
+      <a href="quiz_index.html">Quiz</a>
     </div>
-</header>
+    <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
 <!-- header section ends -->
-
 <div class="quiz-body">
     <div class = "quiz-container">
         <div id="qn1"> 
@@ -53,14 +52,16 @@
     </div>
 </div>
 </div>
-
 <!-- Footer section starts  -->
 <footer>
     <div class="footer-bottom">
         <p class="copyright">Team JAGuars © 2022 <br> Project Function </p>
     </div>
-</footer>
-
-<!-- Footer section ends -->
+      <div class="footer-bottom">
+        <h4>JAGuars</h4>
+        <p class="copyright">Student-led project JAGuars © 2022 <br> Project Function </p>
+      </div>
+  </footer>
+  <!-- Footer section ends -->
 </body>
 </html>

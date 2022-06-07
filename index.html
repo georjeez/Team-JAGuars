@@ -6,33 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">    
     <script src="gallery.js" defer></script>
+    <script src="hamb.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>JAGuars - Home page</title>
 </head>
 <body>
 <!-- header section starts -->
-
-<header>
-        <div class="inner">
-            <div class="logo">
-              <a href="index.html"><img src="assets/Jag_Logo.png" alt="Logo"></a>
-            </div>
-
-            <nav>
-                <li><span><a href="index.html">Home</a></span></li>
-                <li><span><a href="appearance.html">Appearance</a></span></li>
-                <li><span><a href="habitatAndBehaviour.html">Habitat & Behaviour</a></span></li>
-                <li><span><a href="mythology.html">Mythology</a></span></li>
-                <li><span><a href="quiz_index.html">Quiz</a></span></li>
-            </nav>
-        </div>
-</header>
+  <div class="nav-bar">
+    <a href="index.html" class="active">JAGuars</a>
+    <!-- Navigation links (hidden by default) -->
+    <div id="myLinks">
+      <a href="index.html">Home</a>
+      <a href="appearance.html">Appearance</a> 
+      <a href="habitatAndBehaviour.html">Habitat & Behaviour</a>
+      <a href="mythology.html">Mythology</a>
+      <a href="quiz_index.html">Quiz</a>
+    </div>
+    <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
 <!-- header section ends -->
-
 <!-- Introduction to the website -->
-
 <h1 class="title"> Welcome to our website about jaguars! </h1>
 <section class="about" id="about">
   <div class="text">
@@ -47,7 +46,6 @@
         </div>
   </div>
 </section>
-
 <!-- Buttons -->
 <section class="navbtns">
   <div class="nav-row">
@@ -139,8 +137,8 @@
       <div class="column">
         <img class="demo cursor" src="assets/Gallery_6.jpg" style="width:100%" onclick="currentSlide(6)" alt="A young jaguar. Credit: https://www.flickr.com/photos/srudy/33555747230/">
       </div>
-    </div>
-</div>
+      </div>
+      </div>
 
 <div class = "useful-links">
     <h1> Useful Links</h1>
@@ -149,17 +147,16 @@
     <li><a href="https://kids.nationalgeographic.com/animals/mammals/facts/jaguar">National Geographric - facts about jaguars</a> </li>
     <li><a href="https://www.iucnredlist.org/species/15953/123791436">ICUN red list - information on the global conservation status of jaguars</a> </li>
     <li><a href="https://www.inaturalist.org/taxa/41970-Panthera-onca">Distribution map - live map to show the population of jaguars in their habitat</a> </li>
-
 </div>
-
-
 <!-- Footer section starts  -->
 <footer>
+  <div class="footer-bottom-image">
+    <img src="assets/Jag_Logo.png" alt="Logo">
+  </div>
     <div class="footer-bottom">
       <p class="copyright">Team JAGuars © 2022 <br> Project Function </p>
     </div>
 </footer>
-
 <!-- Footer section ends -->
-</body>
+  </body>
 </html>
